@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Montserrat:wght@200&family=Open+Sans:wght@300&family=Poppins:wght@300&family=Roboto:wght@300&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="icon" href="images/logo.png">
+    <title>Bee start </title>
+</head>
+<body>
+    <!-- navBar section -->
+    <nav class="navbarr">
+        <div class="navbarr__container">
+            <a href="index.html" id="navbarr__logo">
+                <img src="images/logo.png" alt=""></a>
+            <div class="navbarr__toggle" id="mobile-menu">
+                <span class="barr"></span>
+                <span class="barr"></span>
+                <span class="barr"></span>
+            </div>
+            <ul class="navbarr__menu">
+                <li class="navbarr__item">
+                    <a href="#me" class="navbarr__links"><span>01.&nbsp;</span>About me </a>
+                </li>
+                <li class="navbarr__item">
+                    <a href="#work" class="navbarr__links"><span>02.&nbsp;</span>Projects</a>
+                </li>
+                <li class="navbarr__item">
+                    <a href="#contact" class="navbarr__links"><span>03.&nbsp;</span>Contact </a>
+                </li>
+                <li class="navbarr__item">
+                    <a href="#resume" class="navbarr__links"><button type="button" id="resumeID" class="all-btn" onclick="openResume()">Resume</button></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End navBar section -->
+
+    <!-- Cursor animation-->
+    <div class="cursor">
+        
+    </div>
+    <div class="cursor-inside">
+    
+    </div>
+    <!-- Lateral Icones -->
+    <div class="social__icons">
+        <a href="https://www.linkedin.com/in/jos%C3%A9-aparecido-ba0564202" target="blank" class="social__icon--link">
+        <i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/silva.j0se?r=nametag" target="blank" class="social__icon--link">
+        <i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/Bumboobee" target="blank" class="social__icon--link">
+        <i class="fab fa-github"></i></a>
+        <a href="https://codepen.io/bumboobee" target="blank" class="social__icon--link">
+        <i class="fab fa-codepen"></i></a>
+    </div>
+    
+    <section class="main">
+        <section class="about-me">
+            <div class="apresentation">
+                <p class="sneak-peak start">Hi, my name is</p>
+                <div id="promptanimation">
+                    <div id="animationoutput"></div>
+                </div>
+                <!-- <h1 class="sneak-peak">José Aparecido [Zé].</h1> -->
+                <h4 class="sneak-peak based">I'm a Front-end developer based in São Paulo, Brazil.</h4>
+                <div class="study">
+                    <p class="sneak-peak">I've been <a href="http://www.fateclins.edu.br/web/" target="_blank">studing software and web development</a> for the last year, now with focus in web application.
+                    Most of my projects include some smooth animations and mostly clean code.</p>
+                </div>
+
+                <!-- <div class="skills">
+                    <div class="skills-info">
+                        <h4>Some of my skills</h4>
+                    </div>
+                </div> -->   
+            </div> 
+        </section>
+    </section>
+    <canvas id="my-canvas"></canvas>
+
+    
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="confetti.js"></script>
+    
+    
+</body>
+</html>
