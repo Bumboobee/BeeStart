@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Montserrat:wght@200&family=Open+Sans:wght@300&family=Poppins:wght@300&family=Roboto:wght@300&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="icon" href="images/logo.png">
     <title>Bee start </title>
 </head>
-<body>
+<body class="body">
     <!-- navBar section -->
     <nav class="navbarr">
         <div class="navbarr__container">
@@ -32,7 +33,7 @@
                     <a href="#contact" class="navbarr__links"><span>03.&nbsp;</span>Contact </a>
                 </li>
                 <li class="navbarr__item">
-                    <a href="#resume" class="navbarr__links"><button type="button" id="resumeID" class="all-btn" onclick="openResume()">Resume</button></a>
+                    <a href="#resume" class="navbarr__links"><button type="button" id="resumeID" class="all-btn">Resume</button></a>
                 </li>
             </ul>
         </div>
@@ -40,11 +41,9 @@
     <!-- End navBar section -->
 
     <!-- Cursor animation-->
-    <div class="cursor">
-        
+    <div class="out-circle cursor"> 
     </div>
-    <div class="cursor-inside">
-    
+    <div class="inside-circle cursor-inside">
     </div>
     <!-- Lateral Icones -->
     <div class="social__icons">
@@ -64,23 +63,27 @@
                 <p class="sneak-peak start">Hi, my name is</p>
                 <div id="promptanimation">
                     <div id="animationoutput"></div>
+                    <div>
+                        <h1>Change the world.</h1> 
+                     </div>
                 </div>
+                
                 <!-- <h1 class="sneak-peak">José Aparecido [Zé].</h1> -->
                 <h4 class="sneak-peak based">I'm a Front-end developer based in São Paulo, Brazil.</h4>
                 <div class="study">
                     <p class="sneak-peak">I've been <a href="http://www.fateclins.edu.br/web/" target="_blank">studing software and web development</a> for the last year, now with focus in web application.
                     Most of my projects include some smooth animations and mostly clean code.</p>
-                </div>
+                </div> 
+                <a href="#" class=""><button type="button" id="" class="all-btn">See my best work</button></a>
+            </div>
+            <!-- <section class="start childhood">
+                <h1><span cl>01.</span> About me</h1>
+            </section> -->
+        </section> 
 
-                <!-- <div class="skills">
-                    <div class="skills-info">
-                        <h4>Some of my skills</h4>
-                    </div>
-                </div> -->   
-            </div> 
-        </section>
+              
     </section>
-    <canvas id="my-canvas"></canvas>
+    <!-- <canvas id="my-canvas"></canvas> -->
 
     
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
