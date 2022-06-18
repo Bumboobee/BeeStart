@@ -30,7 +30,7 @@
     transition-duration: 350ms;
     transition-timing-function: ease-out;
     animation: cursorAnimation .5s infinite alternate;
-    z-index: -1;
+    /* z-index: 10000; */
 }
 .cursor-inside {
     width: 25px;
@@ -41,10 +41,10 @@
     transition-duration: 200ms;
     transition-timing-function: ease-out;
     animation: cursorAnimation .5s infinite alternate;
-    z-index: -1;
+    /* z-index: 10000; */
 }
 a {
-    z-index: 99999;
+    z-index: 9999999;
 }
 a:hover{
     color: var(--aqua-color) !important;
@@ -79,8 +79,13 @@ a:hover{
         transform: scale(1);
     }
 }
-
-
+.projects {
+    display: block;
+    margin: 60px auto;
+}
+.design-projects, .cool-projects {
+    margin-top: 60px;
+}
 ::-moz-selection { /* Code for Firefox */
     color: var(--bg-color);
     background: var(--aqua-color);
@@ -145,6 +150,9 @@ a:hover{
 .navbarr__links span {
     color: var(--aqua-color);
 }
+span {
+    color: var(--aqua-color);
+}
 .all-btn {
     color: var(--aqua-color);
     font-family: var(--primary-font);
@@ -183,6 +191,7 @@ a:hover{
     display: flex;
     margin: 0 150px;
     margin-top: 40px; 
+    flex-direction: column;
 }
 .main-blur {
     filter: blur(3px);
@@ -238,12 +247,59 @@ a:hover{
     color: var(--aqua-color);
     font-size: 2rem;
 }
-
+.my-projects h2 {
+    font-size: 1.6rem;
+    color: var(--white-text);
+    display: flex;
+    font-weight: 600;
+    font-family: var(--primary-font)
+}
+.my-projects h2:after {
+    width: 30%;
+    height: 1px;
+    background: var(--grey-color);
+    position: relative;
+    content: "";
+    display: block;
+    margin: auto 50px;
+}
+.projects-img {
+    width: 100%;
+    height: 220px;   
+    filter: blur(0.08rem);
+    z-index: 20000;
+    transition: .2s ease;
+    opacity: 20%;
+    text-align: center;
+}
+.hold-img {
+    position: relative;
+    text-align: center;
+    z-index: 20000;
+}
+.projects-img:hover {    
+    filter: blur(0rem) !important;
+    transition: .2s ease-in-out;
+    opacity: 60%;
+}
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    color: var(--white-text);
+}
+.tecnologies {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: var(--grey-color) !important;
+}
 @media screen and (max-width: 480px){
     .cursor, .cursor-inside {
         display: none
-    }
-    
+    } 
     .main {
         display: block;
         margin: 0 40px;
@@ -254,6 +310,9 @@ a:hover{
     }
     #animationoutput {
         width: 40vh;
+    }    
+    #promptanimation h1 {
+        font-size: 1.5rem;
     }
     .letters {
         font-size: 1rem;
@@ -336,6 +395,19 @@ a:hover{
     }
     .social__icons {
         display: none;
+    }
+    .my-projects {
+        margin: 0 auto;
+        display: block; 
+    }
+    .web-projets {
+        flex-direction: column;
+        margin: 0 auto;
+        display: block;
+    }
+    .projects-img {
+        width: 100%;
+        height: 220px;
     }
 }
 /* #my-canvas {

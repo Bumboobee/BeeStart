@@ -124,4 +124,13 @@ $(document).ready(function () {
     $(".cursor").removeClass("expand-link");
     $(".inside-circle").addClass("cursor-inside");
   });
+
+  $(".overlay").hide();
+
+  $(".projects-img, this").hover(function() {
+    $(this).siblings(".overlay").show();
+  }, function() {
+    $(".overlay").hide();
+  });
+  
 });
