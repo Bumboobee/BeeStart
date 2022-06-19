@@ -27,8 +27,8 @@ $(document).ready(function () {
   // var confetti = new ConfettiGenerator(confettiSettings);
 
   $("#resumeID").on("click", function (e) {
-    // startConfetti();
-    // confetti.render();
+    //startConfetti();
+    //confetti.render();
     Swal.fire({
       html:
         '<p style = "color: #64FED9; margin-bottom: 15px;">My <span><b>resume</b></span> <p>' +
@@ -132,5 +132,38 @@ $(document).ready(function () {
   }, function() {
     $(".overlay").hide();
   });
-  
+
+  $("#current-year").html(new Date().getFullYear());
+
+  $(".childhood-img").hide();
+
+  $("span").hide();
+
+$(".childhood-img").hide();
+
+$(".childhood").scroll(function() {
+    if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
+        $(".childhood-img").show();    
+    } else {
+        $(".childhood-img").hide();
+    }
 });
+
+});
+  // $(".childhood-text").scroll(function() {
+  //   $( ".childhood-img" ).css( "display", "inline" ).fadeOut( "slow" );
+  // });
+  // ScrollReveal().reveal(".course-col", { interval: 700 });
+  // ScrollReveal().reveal(".campus-col", { interval: 200 });
+  // ScrollReveal().reveal(".campus-col", { interval: 200 });
+  // ScrollReveal().reveal(".facilities-col", { interval: 200 });
+  // ScrollReveal().reveal(".testimonial-col", { interval: 200 });
+  // ScrollReveal().reveal(".hero-btn", { delay: 900, origin: "bottom" });
+  // ScrollReveal().reveal(".course", { delay: 500, origin: "left" });
+  // ScrollReveal().reveal(".animation", { delay: 500, origin: "left" });
+  // ScrollReveal().reveal(".textanimation", { delay: 700, origin: "top" });
+  // ScrollReveal().reveal(".about", { delay: 700, origin: "right" });
+  // ScrollReveal().reveal(".cta", { delay: 500, origin: "bottom" });
+  // ScrollReveal().reveal(".footer", { delay: 900, origin: "top" });
+  // ScrollReveal().reveal(".icons", { delay: 1200, origin: "bottom" });
+  

@@ -14,11 +14,10 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    cursor: url('images/cursor (3).png'), auto;
-    
+    cursor: url('images/cursor (3).png'), auto;   
 }
 .body {
-    background-color: var(--bg-color);
+    background-color: var(--bg-color) !important;
     font-family: var(--typewriter-font);
 }
 .cursor {
@@ -219,7 +218,7 @@ span {
 .apresentation .based {
     margin-bottom: 10px !important;
 }
-.apresentation:nth-last-child(1) {
+.apresentation:nth-last-child(6) {
     color: var(--white-text);
     font-size: clamp(.6rem, 1vw + .2rem, 2rem);
 }
@@ -247,14 +246,27 @@ span {
     color: var(--aqua-color);
     font-size: 2rem;
 }
-.my-projects h2 {
+.my-projects h2,
+.childhood h2 {
     font-size: 1.6rem;
     color: var(--white-text);
     display: flex;
     font-weight: 600;
     font-family: var(--primary-font)
 }
-.my-projects h2:after {
+.contact h2 {
+    font-size: 1.6rem;
+    color: var(--white-text);    
+    font-weight: 600;
+    font-family: var(--primary-font)  
+}
+.contact-info {
+    width: 50%;
+    color: var(--grey-color);
+    margin: 60px auto;
+}
+.my-projects h2:after,
+.childhood h2:after{
     width: 30%;
     height: 1px;
     background: var(--grey-color);
@@ -263,9 +275,52 @@ span {
     display: block;
     margin: auto 50px;
 }
+.childhood-info {
+    display: flex;
+    flex-direction: row;
+}
+.childhood-text {
+    background-color: var(--cards-color);
+    color: var(--white-text);
+    padding: 20px;
+    border-radius: 7px;
+    margin: 60px 0 auto;    
+    z-index: 50000;
+}
+.childhood-imgs {
+    display: flex;
+    position: absolute !important;
+    width: 80%;
+    height: 320px; 
+    margin: 0 auto !important;  
+    /* filter: blur(0.08rem); */
+    z-index: 70000;
+    /*transition: .2s ease;
+    opacity: 20%;
+    text-align: center; */
+    overflow: hidden;
+    margin-top: 2% !important;
+    
+    justify-content: space-between !important;
+}
+.childhood-img {
+    width: 25%;
+    height: 310px;   
+}
+.childhood-img:nth-child(2) { 
+    margin-top: 7% !important;   
+}
+.childhood-img:nth-child(3) {
+    margin-top: -5% !important;   
+}
+.childhood-img:hover {    
+    filter: blur(0.05rem) !important;
+    transition: .2s ease-in-out;
+    opacity: 60%;
+}
 .projects-img {
     width: 100%;
-    height: 220px;   
+    height: 180px;   
     filter: blur(0.08rem);
     z-index: 20000;
     transition: .2s ease;
@@ -278,7 +333,7 @@ span {
     z-index: 20000;
 }
 .projects-img:hover {    
-    filter: blur(0rem) !important;
+    filter: blur(0.05rem) !important;
     transition: .2s ease-in-out;
     opacity: 60%;
 }
@@ -287,13 +342,24 @@ span {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);    
-    color: var(--white-text);
+    color: var(--aqua-color);
 }
 .tecnologies {
     position: absolute;
     display: flex;
     left: 50%;
     transform: translate(-50%, -50%); 
+    color: var(--grey-color) !important;
+}
+footer {
+    font-family: var(--primary-font);
+    color: var(--grey-color) !important;
+}
+footer a {
+    text-decoration: none;
+    color: var(--aqua-color);
+}
+#current-year {
     color: var(--grey-color) !important;
 }
 @media screen and (max-width: 480px){
@@ -407,10 +473,56 @@ span {
     }
     .projects-img {
         width: 100%;
-        height: 220px;
+        height: 180px;
+    }
+    .contact-info {
+        width: 70%;
+    }
+    .childhood-imgs {
+        flex-direction: column;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+        height: 60vh;
     }
 }
-/* #my-canvas {
+.coming-soon h1 {
+    width: 300px;
+    font-size: clamp(.9rem, 1.6vw, 2rem); 
+    color: var(--aqua-color);
+    font-family: var(--secondary-font);
+    overflow: hidden;
+    border-right: 0.15em solid var(--white-text);
+    white-space: nowrap;
+    margin: 0 auto !important;
+    letter-spacing: 0.1em;
+    animation: typing 3.5s steps(45, end), blink-caret 0.5s step-end infinite;
+}
+hr {
+    color: var(--grey-color) !important;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 300px;
+    }
+}
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: var(--grey-color);
+    }
+    70% {
+        border-color: var(--white-text);
+    }
+}
+#my-canvas {
     position: fixed;
     top: 0;
     left: 0;
@@ -418,4 +530,4 @@ span {
     height: 100vh;
     z-index: 0;
     pointer-events: none;
-} */
+}
