@@ -37,6 +37,6 @@ $(document).ready(function () {
             confetti.render();
         }
 
-        ScrollReveal({ distance: '90px' }); 
-        ScrollReveal().reveal(".container", { delay: 3000, origin: "bottom" });
+        ScrollReveal({ distance: '60px' }); 
+        ScrollReveal().reveal(".container", { delay: 1200, origin: "bottom" });
 });
