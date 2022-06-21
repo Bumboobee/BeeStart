@@ -1,12 +1,15 @@
 $(document).ready(function () {
+  $(window).on('load', function () {
+    $('.loading').hide();
+  });
+
   let menu = document.querySelector("#mobile-menu");
   let menuLinks = document.querySelector(".navbarr__menu");
   menu.addEventListener("click", function () {
     if (menu.classList.toggle("is-active")) {
       $("section").addClass("main-blur");
-      $(".main").click(function () {
+      $(".main, .navbarr__links").click(function () {
         //Hide the menus if visible
-        console.log("Entrei");
         $(".navbarr__menu").removeClass("active");
         // $(".navbarr__menu").hide();
         $("section").removeClass("main-blur");
@@ -14,7 +17,6 @@ $(document).ready(function () {
       }),
         $(".main").click(function (event) {
           event.stopPropagation();
-          console.log("Sai");
         });
     } else {
       $("section").removeClass("main-blur");
@@ -22,13 +24,7 @@ $(document).ready(function () {
     menuLinks.classList.toggle("active");
   });
 
-  // var confettiElement = document.getElementById("my-canvas");
-  // var confettiSettings = { target: confettiElement };
-  // var confetti = new ConfettiGenerator(confettiSettings);
-
   $("#resumeID").on("click", function (e) {
-    //startConfetti();
-    //confetti.render();
     Swal.fire({
       html:
         '<p style = "color: #64FED9; margin-bottom: 15px;">My <span><b>resume</b></span> <p>' +
@@ -125,6 +121,17 @@ $(document).ready(function () {
     $(".inside-circle").addClass("cursor-inside");
   });
 
+  ScrollReveal({ distance: '60px' }); 
+  ScrollReveal().reveal(".navbarr", { delay: 1200, origin: "top" });
+  ScrollReveal().reveal(".based, .childhood-info, .contact-info", { delay: 900, origin: "top" });
+
+  ScrollReveal().reveal(".my-projects", { delay: 900, origin: "bottom" });
+  ScrollReveal().reveal("h2", { delay: 900, origin: "bottom" });
+  ScrollReveal().reveal(".hold-img", { delay: 1200, origin: "bottom" });
+
+  ScrollReveal().reveal(".social__icons", { delay: 500, origin: "left" });
+  ScrollReveal().reveal(".effect-title, .sneak-peak", { delay: 700, origin: "right" });
+
   $(".overlay").hide();
 
   $(".projects-img, this").hover(function() {
@@ -137,33 +144,15 @@ $(document).ready(function () {
 
   $(".childhood-img").hide();
 
-  $("span").hide();
+  $(".childhood-info").mouseover(() => {
+    $(".childhood-img").eq(0).show(500).delay(700);
+    $(".childhood-img").eq(1).show(300).delay(2400);
+    $(".childhood-img").eq(2).show(1000).delay(4000);
+    $(".childhood-img").eq(3).show(1300).delay(5400);
+  });
 
-$(".childhood-img").hide();
+  $(".childhood-info").mouseout(() => {
+    $(".childhood-img").hide(3000).fadeOut(100);
+  });
 
-$(".childhood").scroll(function() {
-    if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
-        $(".childhood-img").show();    
-    } else {
-        $(".childhood-img").hide();
-    }
 });
-
-});
-  // $(".childhood-text").scroll(function() {
-  //   $( ".childhood-img" ).css( "display", "inline" ).fadeOut( "slow" );
-  // });
-  // ScrollReveal().reveal(".course-col", { interval: 700 });
-  // ScrollReveal().reveal(".campus-col", { interval: 200 });
-  // ScrollReveal().reveal(".campus-col", { interval: 200 });
-  // ScrollReveal().reveal(".facilities-col", { interval: 200 });
-  // ScrollReveal().reveal(".testimonial-col", { interval: 200 });
-  // ScrollReveal().reveal(".hero-btn", { delay: 900, origin: "bottom" });
-  // ScrollReveal().reveal(".course", { delay: 500, origin: "left" });
-  // ScrollReveal().reveal(".animation", { delay: 500, origin: "left" });
-  // ScrollReveal().reveal(".textanimation", { delay: 700, origin: "top" });
-  // ScrollReveal().reveal(".about", { delay: 700, origin: "right" });
-  // ScrollReveal().reveal(".cta", { delay: 500, origin: "bottom" });
-  // ScrollReveal().reveal(".footer", { delay: 900, origin: "top" });
-  // ScrollReveal().reveal(".icons", { delay: 1200, origin: "bottom" });
-  

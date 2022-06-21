@@ -12,7 +12,10 @@
     <title>The Athomo</title>
 </head>
 <body class="body">
-    <!-- navBar section -->
+    <section class="loading">
+        <div class="dot-shuttle"></div>
+    </section>
+    
     <nav class="navbarr">
         <div class="navbarr__container">
             <a href="index.html" id="navbarr__logo">
@@ -24,10 +27,10 @@
             </div>
             <ul class="navbarr__menu">
                 <li class="navbarr__item">
-                    <a href="#me" class="navbarr__links"><span>01.&nbsp;</span>About me </a>
+                    <a href="#childhood" class="navbarr__links"><span>01.&nbsp;</span>About me </a>
                 </li>
                 <li class="navbarr__item">
-                    <a href="#work" class="navbarr__links"><span>02.&nbsp;</span>Projects</a>
+                    <a href="#my-projects" class="navbarr__links"><span>02.&nbsp;</span>Projects</a>
                 </li>
                 <li class="navbarr__item">
                     <a href="#contact" class="navbarr__links"><span>03.&nbsp;</span>Contact </a>
@@ -38,14 +41,12 @@
             </ul>
         </div>
     </nav>
-    <!-- End navBar section -->
 
-    <!-- Cursor animation-->
     <div class="out-circle cursor"> 
     </div>
     <div class="inside-circle cursor-inside">
     </div>
-    <!-- Lateral Icones -->
+
     <div class="social__icons">
         <a href="https://www.linkedin.com/in/jos%C3%A9-aparecido-ba0564202" target="blank" class="social__icon--link">
         <i class="fab fa-linkedin"></i></a>
@@ -56,30 +57,30 @@
         <a href="https://codepen.io/bumboobee" target="blank" class="social__icon--link">
         <i class="fab fa-codepen"></i></a>
     </div>
-    
+
     <section class="main">
+
         <section class="about-me mb-5">
             <div class="apresentation mb-5">
                 <p class="sneak-peak start">Hi, my name is</p>
                 <div id="promptanimation">
                     <div id="animationoutput"></div>
-                    <div>
+                    <div class="effect-title">
                         <h1>Change the world.</h1> 
-                     </div>
+                    </div>
                 </div>
-                
-                <!-- <h1 class="sneak-peak">José Aparecido [Zé].</h1> -->
+
                 <h4 class="sneak-peak based">I'm a Front-end developer based in São Paulo, Brazil.</h4>
                 <div class="study">
                     <p class="sneak-peak">I've been <a href="http://www.fateclins.edu.br/web/" target="_blank">studing software and web development</a> for the last year, now with focus in web application.
                     Most of my projects include some smooth animations and mostly clean code.</p>
                 </div> 
-                <a href="#" class=""><button type="button" id="" class="all-btn">See my best work</button></a>
+                <a href="coming.html" class=""><button type="button" id="" class="all-btn">See my best work</button></a>
             </div>
             
             <br>
             <br>
-            <br>
+            <br id="childhood">
             <br>
 
             <div class="childhood mt-5">
@@ -97,15 +98,18 @@
                         Since then, I never stopped, always looking for something new, always learning, until my name was recognized from Japan to Brazil!.
                     </div>
                     <div class="childhood-imgs">
-                        <img class="childhood-img"  src="images/myPhoto.jpg" alt="me">
-                        <img class="childhood-img"  src="images/myPhoto.jpg" alt="me">
-                        <img class="childhood-img"  src="images/myPhoto.jpg" alt="me">    
+                        <img class="childhood-img" src="images/meOldOne.jpeg" alt="me">
+                        <img class="childhood-img" src="images/meChild.jpeg" alt="me">   
+                        <video class="childhood-img" autoplay loop muted src="images/meVideo.mov" >
+                            Your browser does not support HTML5 video.
+                        </video>
+                        <img class="childhood-img" src="images/meOldTwo.jpg" alt="me">   
                     </div>
                 </div>
             </div> 
         </section>
 
-        <br />
+        <br id="my-projects"/>
         <br />
 
         <section class="my-projects mt-5">
@@ -263,12 +267,12 @@
             </div>
         </section> 
         
-        <section class="contact mt-5 text-center">
+        <section id="contact" class="contact mt-5 text-center">
             <h2><span>03.&nbsp;</span>Drop me a message</h2>
             <div class="contact-info text-center">
                 As a frontend developer, I know that we must always be open to face a new challenge, every day, every second. Just send me a message and we can work on it. I'll probably answer you at the right time!            </div>
-            <div class="container mx-auto d-block text-center my-5">
-                <a href="https://wa.me/5514998038157?text=Olá, José! Tudo bem?" class=""><button type="button" class="all-btn">Get in Touch</button></a>       
+            <div class="container mx-auto d-block text-center my-5 btn-contact">
+                <a href="https://wa.me/5514998038157?text=Olá, José! Tudo bem?"><button type="button" class="all-btn">Get in Touch</button></a>       
             </div>
         </section>
 
@@ -277,16 +281,14 @@
         <footer class="my-5 text-center">
             <a href="#">The Athomo <span id="current-year"></span></a> - All rights reserved <b>&copy;</b> 
             <br>
-            | People are forged from dust, but dreams turn them into pure gold.
+            <span>|</span> People are forged from dust, but dreams turn them into pure gold.
         </footer>
     </section>           
-    <!-- <canvas id="my-canvas"></canvas> -->
     
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script type="text/javascript"  src="script.js"></script>
     <script type="text/javascript"  src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="text/javascript"  src="https://unpkg.com/scrollreveal"></script>
-    <script type="text/javascript"  src="confetti.js"></script>
-    
+    <script type="text/javascript"  src="confetti.js"></script>  
 </body>
 </html>

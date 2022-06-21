@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var confettiElement = document.getElementById("my-canvas");
+    var confettiElement = document.getElementById("confetti-canvas");
     var confettiSettings = { target: confettiElement };
     var confetti = new ConfettiGenerator(confettiSettings);
     const cursor = $(".cursor");
@@ -34,6 +34,9 @@ $(document).ready(function () {
 
         const myTimeoutConfetti = setTimeout(awaitConfetti, 3500);
         function awaitConfetti() {
-            confetti.render().fadeIn();
+            confetti.render();
         }
+
+        ScrollReveal({ distance: '90px' }); 
+        ScrollReveal().reveal(".container", { delay: 3000, origin: "bottom" });
 });
