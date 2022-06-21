@@ -600,8 +600,11 @@ footer a {
         font-size: .9rem;
     }
     #animationoutput {
-        font-size: 1.6rem !important;
+        font-size: 1.5 !important;
     }    
+    .letters {
+        font-size: 1.6rem !important;   
+    }
     #promptanimation h1 {
         font-size: 1.5rem;
         margin: auto 0 !important;
