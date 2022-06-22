@@ -718,4 +718,7 @@ footer a {
     .childhood-img:nth-child(4) {  
         display: none !important;
     }
+    embed {
+        height: 500px;
+    }
 }

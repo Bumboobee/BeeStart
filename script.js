@@ -28,7 +28,7 @@ $(document).ready(function () {
     Swal.fire({
       html:
         '<p style = "color: #64FED9; margin-bottom: 15px;">My <span><b>resume</b></span> <p>' +
-        '<embed src="images/Resume.pdf" type="application/pdf" width="100%" height="600px" />',
+        '<embed src="images/JoseResume.pdf" type="application/pdf" width="100%" height="600px" />',
       showCloseButton: true,
       showCancelButton: false,
       background: "#01161E",
@@ -38,6 +38,14 @@ $(document).ready(function () {
       focusConfirm: true,
       width: "800px",
     });
+
+    var userLang = navigator.language || navigator.userLanguage; 
+    if(userLang == 'pt-BR') {
+      $("embed").attr("src", "images/JoseCurriculo.pdf");
+
+    } else {
+      $("embed").attr("src", "images/JoseResume.pdf");
+    }
   }),
     (finaltext = "José \xa0Aparecido \xa0[Zé].");
   const characters =
