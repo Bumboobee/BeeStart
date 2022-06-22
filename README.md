@@ -1,5 +1,5 @@
 ## BeeStart
-My personal portfolio version -.2
+My personal **[portfolio version -.2](https://theathomo.vercel.app/)**
 
 As everything evolves, here is my new 2.0 brand portfolio, bringing all my essence on one site, clean, simple and at the same time beautiful (my passion). 
 
@@ -27,7 +27,7 @@ they are built step by step, little by little and in the end, when you don't eve
 
 ### Take a look 🙆‍♂️
 
- **The final result you can see [➡here⬅](https://bumboobee.github.io/PersonalWebsite/)**
+ **The final result you can see [➡here⬅](https://theathomo.vercel.app/)**
  
  I hope you enjoy it. 😉
  
