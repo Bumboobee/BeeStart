@@ -1,5 +1,5 @@
 ## TheAthomo
-My personal **[portfolio version 2](https://theathomo.vercel.app/)**
+After months of waiting, here he comes, my personal **[portfolio version 2](https://theathomo.vercel.app/)**
 
 As everything evolves, here is my new 2.0 brand portfolio, bringing all my essence on one site, clean, simple and at the same time beautiful (my passion). 
 
