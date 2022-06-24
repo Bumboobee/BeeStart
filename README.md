@@ -29,7 +29,7 @@ just to let this registried. *(Figma has a place in my heart ☺)*
  
 <div align="center">
 
-![Ettd](https://user-images.githubusercontent.com/94147847/173358102-4c7362ce-34d3-4704-80d7-365350deb04e.gif)
+[![Ettd](https://user-images.githubusercontent.com/94147847/173358102-4c7362ce-34d3-4704-80d7-365350deb04e.gif)](https://theathomo.vercel.app/)
 
  > La libertad no es escoger un camino, sino rebelarse contra todos los que quieren imponerte uno.
  >> **Merlí**
