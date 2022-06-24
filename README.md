@@ -1,5 +1,5 @@
 ## TheAthomo
-My personal **[portfolio version -.2](https://theathomo.vercel.app/)**
+My personal **[portfolio version 2](https://theathomo.vercel.app/)**
 
 As everything evolves, here is my new 2.0 brand portfolio, bringing all my essence on one site, clean, simple and at the same time beautiful (my passion). 
 
@@ -11,7 +11,7 @@ they are built step by step, little by little and in the end, when you don't eve
 |      Css     |    html    |  JavaScript |    Jquery   |
 |:------------:|:----------:|:-----------:|:-----------:|
 | [ScrollReveal](https://scrollrevealjs.org/) | [SweetAlert](https://sweetalert2.github.io/) | [Font Awesome](https://fontawesome.com/) | [GoogleFonts](https://fonts.google.com/) |
-| Whatsapp API | [Bootstrap](https://getbootstrap.com/)  | [Confetti.js](https://agezao.github.io/confetti-js/) | - **Coffee...** like, a lot ☕  |
+| Whatsapp API | [Bootstrap](https://getbootstrap.com/)  | [Confetti.js](https://agezao.github.io/confetti-js/) | - **Coffee...** like, a lot ☕ (kidding, I don't drink 😏)  |
 >> A coul'd not forget to say that **[Figma](https://www.figma.com/ui-design-tool/)** was a very, like VERY important tool that I used to design mostly of the site, 
 just to let this registried. *(Figma has a place in my heart ☺)*
 
