@@ -6,26 +6,18 @@ As everything evolves, here is my new 2.0 brand portfolio, bringing all my essen
 I put a lot of effort into this, taking time, knowledge and most importantly, patience, patience to understand that all great things are not done overnight! 
 they are built step by step, little by little and in the end, when you don't even expect it, they are more than ready.
 
-### What i used 
+## What I've used
 
-- [Bulma](https://bulma.io/documentation/)
+|      Css     |    html    |  JavaScript |    Jquery   |
+|:------------:|:----------:|:-----------:|:-----------:|
+| [ScrollReveal](https://scrollrevealjs.org/) | [SweetAlert](https://sweetalert2.github.io/) | [Font Awesome](https://fontawesome.com/) | [GoogleFonts](https://fonts.google.com/) |
+| Whatsapp API | [Bootstrap](https://getbootstrap.com/)  | [Confetti.js](https://agezao.github.io/confetti-js/) | - **Coffee...** like, a lot ☕  |
+>> A coul'd not forget to say that **[Figma](https://www.figma.com/ui-design-tool/)** was a very, like VERY important tool that I used to design mostly of the site, 
+just to let this registried. *(Figma has a place in my heart ☺)*
 
-- Css
+> To deploy this little piece of art 😆, the **[Vercel](https://vercel.com/docs/concepts/deployments/overview)** has done hard work. 
 
-- [Font Awesome](https://fontawesome.com/)
-
-- Html
-
-- JavaScript
- 
-- [ScrollReveal](https://scrollrevealjs.org/)
-
-- [SweetAlert](https://sweetalert2.github.io/)
-
-- **Coffee...** like, a lot ☕
-&nbsp; 
-
-### Take a look 🙆‍♂️
+## Take a look 🙆‍♂️
 
  **The final result you can see [➡here⬅](https://theathomo.vercel.app/)**
  
@@ -37,4 +29,6 @@ they are built step by step, little by little and in the end, when you don't eve
 
  > La libertad no es escoger un camino, sino rebelarse contra todos los que quieren imponerte uno.
  >> **Merlí**
+ 
+ <p>Updates coming soon!</p>
 <div \>
