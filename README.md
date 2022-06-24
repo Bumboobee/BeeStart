@@ -7,11 +7,15 @@ I put a lot of effort into this, taking time, knowledge and most importantly, pa
 they are built step by step, little by little and in the end, when you don't even expect it, they are more than ready.
 
 ## What I've used
-
+<div align="center">
+ 
 |      Css     |    html    |  JavaScript |    Jquery   |
 |:------------:|:----------:|:-----------:|:-----------:|
 | [ScrollReveal](https://scrollrevealjs.org/) | [SweetAlert](https://sweetalert2.github.io/) | [Font Awesome](https://fontawesome.com/) | [GoogleFonts](https://fonts.google.com/) |
 | Whatsapp API | [Bootstrap](https://getbootstrap.com/)  | [Confetti.js](https://agezao.github.io/confetti-js/) | - **Coffee...** like, a lot ☕ (kidding, I don't drink 😏)  |
+ 
+<div \>
+ 
 >> A coul'd not forget to say that **[Figma](https://www.figma.com/ui-design-tool/)** was a very, like VERY important tool that I used to design mostly of the site, 
 just to let this registried. *(Figma has a place in my heart ☺)*
 
