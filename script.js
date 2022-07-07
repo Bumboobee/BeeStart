@@ -163,4 +163,9 @@ $(document).ready(function () {
     $(".childhood-img").hide(3000).fadeOut(100);
   });
 
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MEZY48DE81');
 });
