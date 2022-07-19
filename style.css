@@ -453,38 +453,33 @@ footer a {
     color: var(--grey-color) !important;
 }
 
-.coming-soon h1 {
-    width: 300px;
+.coming-soon {
+    height: 10vh;
+    display: grid;
+    place-items: center;
+}
+
+.typing-demo {
+    width: 30ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid var(--hover-color);
     font-size: clamp(.9rem, 1.6vw, 2rem); 
     color: var(--aqua-color);
-    font-family: var(--secondary-font);
-    overflow: hidden;
-    border-right: 0.15em solid var(--white-text);
-    white-space: nowrap;
-    margin: 0 auto !important;
     letter-spacing: 0.1em;
-    animation: typing 3.5s steps(45, end), blink-caret 0.5s step-end infinite;
+    font-family: var(--secondary-font);
+    animation: typing 2.5s steps(22), blink .5s step-end infinite alternate;
 }
 
 @keyframes typing {
     from {
-        width: 0;
-    }
-    to {
-        width: 300px;
+        width: 0
     }
 }
-
-@keyframes blink-caret {
-    from,
-    to {
-        border-color: transparent;
-    }
+    
+@keyframes blink {
     50% {
-        border-color: var(--grey-color);
-    }
-    70% {
-        border-color: var(--white-text);
+        border-color: transparent
     }
 }
 
